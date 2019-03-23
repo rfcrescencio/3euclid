@@ -1,0 +1,49 @@
+.card-container
+{
+	perspective: 700;
+}
+.card 
+{
+	position: absolute;
+	top: 25%;
+	left: 19%;
+    color:#fff;
+	text-align: center;
+	line-height: 300px;
+	margin: 20px;
+	width: 700px;
+	height: 290px;
+	transition: all 0.6s ease;
+	transform-style: preserve-3d;
+}
+.front h2
+{
+	font-size: 50px;
+	line-height: 230px;
+}
+.front, .back
+{
+	background-color:rgba(50,58,173,0.6);
+	position: absolute;
+	top: 0;
+	left: 50px;
+	width: 700px;
+	height: 290px;
+	backface-visibility: hidden;
+}
+.card .back
+{
+	position: absolute;
+	top: 0;
+	left: -50px;
+	line-height: 20px;
+	width: 660px;
+	height: 300px;
+	text-align: left;
+	padding: 20px;
+	transform: rotateY(180deg);
+}
+.card:hover
+{
+	transform: rotateY(180deg);
+}
